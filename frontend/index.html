@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Architecture Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Input Form -->
+        <div class="form-section">
+            <h1>🏗️ GitHub Architecture Analyzer</h1>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="owner">Repository Owner</label>
+                    <input type="text" id="owner" placeholder="e.g., microsoft">
+                    <div class="example-text">GitHub username or organization</div>
+                </div>
+                <div class="input-group">
+                    <label for="repo">Repository Name</label>
+                    <input type="text" id="repo" placeholder="e.g., vscode">
+                    <div class="example-text">Repository name</div>
+                </div>
+            </div>
+            <button class="analyze-btn" id="analyzeBtn">🔍 Analyze Architecture</button>
+        </div>
+        <!-- Progress Section -->
+        <div class="progress-section" id="progressSection">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">Starting analysis...</div>
+        </div>
+        <!-- Results Section -->
+        <div class="results-section" id="resultsSection">
+            <h2 class="results-title">
+                <span class="success-indicator"></span>
+                Architecture Analysis Complete
+            </h2>
+            <div class="architecture-diagram" id="architectureDiagram"></div>
+            <div class="error-message" id="errorMessage"></div>
+        </div>
+    </div>
+</body>
+</html>

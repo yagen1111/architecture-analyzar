@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="message.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h1>💬 Message</h1>
+            
+            <!-- Dynamic Services Display -->
+            <div class="dynamic-services-info">
+                <p style="text-align: center; color: #666; font-style: italic; margin: 20px 0;">
+                    🔍 Services will be dynamically detected and displayed below based on the repository analysis
+                </p>
+            </div>
+            
+
+            <div class="input-group full-width">
+                <div class="message-content-area">
+                    <div id="messageContent">
+                        <!-- Repository input will be displayed here -->
+                        Loading repository information...
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Services Array Text Box for Testing -->
+            <div class="input-group full-width">
+                <label for="servicesArrayBox">🔧 Services Array (String Format):</label>
+                <textarea id="servicesArrayBox" readonly placeholder="Services array will appear here..." style="width: 100%; height: 80px; padding: 12px; border: 2px solid #e1e5f2; border-radius: 8px; font-family: monospace; font-size: 14px; resize: vertical; background-color: #3f90e1;"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="message.js" defer></script>
+</body>
+</html>
